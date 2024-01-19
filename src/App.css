@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+nav {
+  max-width: 1440px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 420px;
+  justify-content: center;
+}
+
+.layout {
+  display: flex;
+  display: row;
+  gap: 20px;
+}
+
+.layout li {
+  list-style: none;
+}
+
+.btn {
+  display: flex;
+  button {
+    background-color: rgb(201, 0, 0);
+    outline: none;
+    border: none;
+  }
+}
+
+.homeContainer {
+  width: 1125px;
+  height: calc(100vh - 72px) ;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.textFrame{
+  display: flex;
+  flex-direction: column;
+  width: 595px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.textFrame h1{
+  font-weight: 800;
+  font-size: 80px;
+  width: 595px;
+  height: 80px;
+  line-height: 0.8;
+}
+
+.textFrame p{
+  width: 300px;
+  text-align: justify;
+}
+
+.imageFrame{
+  width: 530;
+  height: 490px;
+}
+
+.newbtn{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  button{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.category{
+  background-color: gray;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.shopImages{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
